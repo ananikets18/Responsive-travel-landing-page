@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+/* Background Image */
+.bg_img::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 18%;
+background-image: url(london_01.jpg);
+background-size: cover;
+background-position: top center;
+filter: brightness(80%);
+z-index: -1;
+}
+
+/* Heading 4 */
+
+h4 {
+position: relative;
+font-size: 28px;
+color: white;
+}
+
+h4::before{
+content: '';
+width: 33px;
+height: 33px;
+border-radius: 50%;
+z-index: -1;
+background-color: #3d3d3d;
+position: absolute;
+left: 0.9rem;
+}
+
+/* Showcase */
+
+.showcase{
+padding-top: 7rem;
+padding-right: 3rem;
+padding-bottom: 2rem;
+}
+
+/* Tabs */
+
+.tabs__{
+position: absolute;
+width: 94%;
+bottom: 0.5rem;
+}
+
+/* Style the tab */
+.tab {
+overflow: hidden;
+border-top-left-radius:25px;
+ /* border: 1px solid #ccc; */
+}
+.tab_content{
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+border-top-right-radius: 25px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+}
+
+/* Tablinks */
+.tablinks{
+color: white;
+background-color: black;
+opacity: 0.90;
+}
+
+.tablinks.active{
+color: black;
+background-color: white;
+}
+/* Tabcontent */
+.tabcontent {
+-webkit-animation: fadeEffect 1s;
+animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+
+
+/* Responsive screen at 991px in width */
+
+@media screen and (max-width:991px){
+/* Showcase */
+.showcase{
+padding-top: 4rem;
+padding-left: 2rem;
+padding-bottom: 2rem;
+text-align: center;
+}
+}
+
+/* Responsive Screen at width of 1278px */
+@media screen and (max-width:1278px){
+/* Tabs */
+.tabs__ {
+ bottom: -27rem;
+}
+}
+
+/* Responive screen at width of 425px */
+@media screen and (max-width:425px){
+.btn_search{
+/* button-search */
+width: 19rem;
+}
+}

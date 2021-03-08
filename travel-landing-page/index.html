@@ -1,0 +1,269 @@
+<!--- The Code is distributed just to help other it is free to use if you want some changes in this code feel free to mail me at
+ananiket.pshinde18@gmail.com i will respond you as quick as possible !!! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel site</title>
+    <link rel="stylesheet" href="./css/dist.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body>
+        <section>
+                <div class="bg_img">
+                    <header class="container mx-auto py-3">
+                        <nav class="px-3">
+                            <main class="flex items-center justify-between">
+                                <div > 
+                                    <!-- Logo -->
+                                    <div class="circle">
+                                        <h4 class="text-xl font-normal z-10">Fly<span class="font-black font-bold">High</span></h4>
+                                    </div>
+                                </div>
+                                <div class="xl:block hidden">
+                                    <!-- nav_menu -->
+                                    <ul class="flex items-center justify-center space-x-5">
+                                        <li>
+                                            <a href="#" class="capitalize text-md text-gray-100">Holiday Packages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"  class="capitalize text-md text-gray-100">
+                                            Flight Schedule
+                                            </a>
+                                    </li>
+                                        <li>
+                                            <a href="#"  class="capitalize text-md text-gray-100">
+                                            Account Settings
+                                            </a>
+                                    </li>
+                                        <li>
+                                            <a href="#"  class="capitalize text-md text-gray-100">
+                                            Manage Booking
+                                            </a>
+                                    </li>
+                                    </ul>
+                                </div>
+                                <div class="xl:block hidden">
+                                    <!-- Extra links -->
+                                    <ul class="flex items-center justify-center space-x-3">
+                                        <li>
+                                            <a href="#" class="capitalize text-md text-gray-100">Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="w-12 h-12 p-1 bg-black text-sm text-white rounded">Sign in</a>
+                                        </li>
+                                        <li>
+                                            <span class="flex items-center text-sm text-gray-100">EN<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <button class="xl:hidden block focus:outline-none" onclick="Mob_menu()">
+                                        <svg class="w-5 h-5 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" id="menu_bar" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                                            <path stroke-linecap="round" class="hidden" id="close" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                    </button>
+                            </main> 
+
+                          <!-- Secondary Navbar -->
+
+                            <div class="xl:hidden block my-4">
+                                <main class="hidden bg-gray-900 p-2.5 rounded-lg shadow-xl" id="menu">
+                                    <ul class="flex flex-col space-y-2">
+                                        <li>
+                                            <a href="#" class="capitalize text-md text-gray-100">Holiday Packages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"  class="capitalize text-md text-gray-100">
+                                            Flight Schedule
+                                            </a>
+                                    </li>
+                                        <li>
+                                            <a href="#"  class="capitalize text-md text-gray-100">
+                                            Account Settings
+                                            </a>
+                                    </li>
+                                        <li>
+                                            <a href="#"  class="capitalize text-md text-gray-100">
+                                            Manage Booking
+                                            </a>
+                                    </li>
+                                    </ul>
+    
+                                    <ul class="flex flex-col space-y-2 mt-2">
+                                        <li>
+                                            <a href="#" class="capitalize text-md text-gray-100">Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="w-12 h-12 p-1 bg-black text-sm text-white rounded">Sign in</a>
+                                        </li>
+                                        <li>
+                                            <span class="flex items-center text-sm text-gray-100">EN<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+                                        </li>
+                                    </ul>
+                                </main>
+                            </div>
+                        </nav>
+                    </header>
+
+                    <main class="w-full showcase">
+                        <section class="flex flex-col space-y-4 float-right">
+                            <div class="flex flex-col space-y-1">
+                                <h2 class="text-3xl text-gray-100">
+                                    Hey Buddy! where are you
+                                </h2>
+                                <h3 class="text-2xl text-gray-50 font-normal">
+                                   <span class="font-semibold">Flying </span>to? </h3>
+                            </div>
+                            <div class="float-right mt-2 text-gray-200 hover:text-gray-100">
+                                <a href="#" class="flex items-center justify-center lg:justify-start"><svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path></svg> Explore now</a>
+                            </div>
+                        </section>
+                    </main>
+
+                    <!-- Tabs -->
+
+                    <main class="container xl:mx-auto md:mx-6 mx-3"> 
+                        <section class="tabs__">
+                            <div class="tab">
+                                <button class="tablinks flex items-center active" onclick="openTab(event, 'flight')"><ion-icon name="airplane" class="mr-2"></ion-icon>Flight</button> 
+                                <button class="tablinks flex items-center bg-black text-white" onclick="openTab(event, 'hotel')"><ion-icon name="bed" class="mr-2"></ion-icon>Hotel</button>
+                                <button class="tablinks flex items-center bg-black text-white rounded-tr-2xl" onclick="openTab(event, 'car')"><ion-icon name="car" class="mr-2"></ion-icon>Rent a Car</button>
+                              </div>
+
+
+                              <section class="bg-white h-max xl:h-48 tab_content shadow-lg border p-5 mb-4">
+                                <div id="flight" class="tabcontent">
+                                    <ul class="flex xl:flex-row flex-col xl:items-center justify-around space-y-4 xl:space-y-0 xl:space-x-5 space-x-0 pb-3 px-2">
+                                        <li>
+                                            <span class="flex items-center">Round Trip <ion-icon name="caret-down" class="ml-1"></ion-icon></span>
+                                        </li>
+                                        <li>
+                                            <span class="flex items-center">02 Passengers <ion-icon name="caret-down" class="ml-1"></ion-icon></span>
+                                        </li>
+                                        <li>
+                                            <span class="flex items-center">Business Class <ion-icon name="caret-down" class="ml-1"></ion-icon></span>
+                                        </li>
+                                    </ul>
+
+                                    <main class="flex xl:flex-row flex-col items-center justify-around w-full pt-1">
+                                        <section class="flex xl:flex-row flex-col items-center items-center xl:space-x-4">
+                                            <div class="border border-gray-300 rounded-xl w-80 p-2">
+                                                <span class="text-sm uppercase font-semibold">From</span>
+                                                <h2 class="text-xl font-black">Mumbai</h2>
+                                                <span class="text-md capitlize text-gray-500">Mumbai, India</span>
+                                            </div>
+                                                <div class="w-10 h-10 rounded-full border border-gray-400 flex flex-col items-center justify-center my-4">
+                                                    <ion-icon name="arrow-up-outline" class=" xl:hidden block"></ion-icon>
+                                                    <ion-icon name="arrow-down-outline" class="xl:hidden block"></ion-icon>
+                                                    <ion-icon name="arrow-forward-outline" class="xl:block hidden"></ion-icon>
+                                                    <ion-icon name="arrow-back-outline" class="xl:block hidden"></ion-icon>
+                                                </div>
+                                            <div class="border border-gray-300 rounded-xl w-80 p-2">
+                                                <span class="text-sm uppercase font-semibold">To</span>
+                                                <h2 class="text-xl font-black">Silicon Valley</h2>
+                                                <span class="text-md capitlize text-gray-500">California, US</span>
+                                            </div>
+                                        </section>
+
+                                        <div class="border border-gray-300 rounded-xl w-80 xl:w-96 p-2 flex xl:flex-row flex-col xl:items-center justify-around my-2 xl:space-y-0 space-y-3">
+                                            <section>
+                                                <span class="text-sm uppercase font-semibold">departure </span>
+                                                <h2 class="text-xl font-black flex items-center">Fri, 22 Mar <ion-icon name="calendar-number-outline" class="ml-2"></ion-icon></h2>
+                                                <ul class="flex items-center space-x-2">
+                                                    <li>
+                                                       <a href="#" class="border-b border-gray-400 text-sm text-gray-700">Prev</a>  
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"  class="text-sm text-gray-700">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </section>
+
+                                            <section>
+                                                <span class="text-sm uppercase font-semibold">return </span>
+                                                <h2 class="text-xl font-black flex items-center">Mon, 2 Apr <ion-icon name="calendar-number-outline" class="ml-2"></ion-icon></h2>
+                                                <ul class="flex items-center space-x-2">
+                                                    <li>
+                                                       <a href="#" class="border-b border-gray-400 text-sm text-gray-700">Prev</a>  
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"  class="text-sm text-gray-700">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </main>
+
+                                    <!-- Search btn -->
+                                    <div class="float-right">
+                                        <button class="bg-black w-40 h-8 p-2 text-white font-normal text-sm rounded-lg flex items-center xl:justify-start justify-center btn_search">
+                                                Seach Flights <ion-icon name="arrow-forward-outline" class="ml-2"></ion-icon>
+                                        </button>
+                                    </div>
+                                  </div>
+
+                                <div id="hotel" class="tabcontent hidden">
+                                            <div class="w-full flex xl:flex-row flex-col items-center justify-around space-y-4 xl:space-y-0">
+                                                <div class=""> 
+                                                    <img src="./img/01.jpg" alt="testimg" class="w-52 h-36 rounded-lg shadow-lg border">
+                                                </div>
+                                                <div class="">
+                                                    <img src="./img/02.jpg" alt="testimg" class="w-52 h-36 rounded-lg shadow-lg border">
+                                                </div>
+                                                <div class="">
+                                                    <img src="./img/03.png" alt="testimg" class="w-52 h-36 rounded-lg shadow-lg border">
+                                                </div>
+                                            </div>
+                                        </div>
+                                  
+                                        <div id="car" class="tabcontent hidden">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deleniti, nesciunt rerum labore laudantium a est dignissimos at provident nulla aliquid iste repellendus commodi earum ex, sunt libero aliquam molestias explicabo pariatur obcaecati! Eaque eum officia aut officiis suscipit consequatur temporibus aperiam ipsum, animi dolores natus magnam enim distinctio odit.
+                                            </p>
+                                        </div>
+                              </section>
+                        </section>
+                    </main>
+                    </div>
+        </section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+<script>
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+/* Mobile Mneu Function */
+function Mob_menu(){
+    if($("#menu").hasClass("hidden")) {
+        $("#menu").removeClass("hidden");
+        $("#menu_bar").css({display : "none"});
+        $("#close").css({display: "block"});
+    }
+    else {
+        $("#menu").addClass("hidden");
+        $("#menu_bar").css({display : "block"});
+        $("#close").css({display:"none"});
+    }
+}
+</script>
+</body>
+</html>
